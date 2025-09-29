@@ -7,77 +7,77 @@ function Projects() {
     const projects = [
         {
             title: "Calculator", 
-            desc: "An online calculator that uses basic mathematical operations", 
+            desc: "An online calculator that uses basic mathematical operations.", 
             tags: ["ReactJS", "HTML", "CSS"], 
             difficulty: "Med", 
             link: "https://aax-calculator.netlify.app/"
         },
         {
             title: "RPS", 
-            desc: "A simple rps game",
+            desc: "A simple rps game with random module.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-rps-game.netlify.app/"
         },
         {
-            title: "Task Management App", 
-            desc: "A to-do list with CRUD capabilities",
+            title: "Task App", 
+            desc: "A to-do list with basic creation and deletion.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-rps-game.netlify.app/"
         },
         {
             title: "Employee Authentication App", 
-            desc: "An employee login app with basic authentication capabilities",
+            desc: "An employee login app with basic authentication capabilities.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-employe-auth-form.netlify.app/"
         },
         {
             title: "BMI Calculator", 
-            desc: "An app that calculates body mass index",
+            desc: "An app that calculates body mass index.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-bmi-calculator-app.netlify.app/"
         },
         {
             title: "Joke Generator", 
-            desc: "A joke application that generates hardcoded jokes",
+            desc: "A joke application that generates hardcoded jokes.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-joke-app.netlify.app/"
         },
         {
             title: "Domain Name Generator", 
-            desc: "An application that generates domain names with copy/paste functionality",
+            desc: "An application that generates domain names with copy/paste functionality.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Med",
             link: "https://aax-domain-name-generator.netlify.app/"
         },
         {
             title: "Quiz Application", 
-            desc: "A quiz application with various categories and color-coded answer choices",
+            desc: "A quiz application with various categories and color-coded answer choices.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Hard",
             link: "https://aax-quiz-app.netlify.app/"
         },
         {
             title: "Password Validator", 
-            desc: "A simple password validator app",
+            desc: "A simple password validator app.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-password-validator.netlify.app/"
         },
         {
             title: "Book Catalog App", 
-            desc: "A basic book cataloging system",
+            desc: "A basic book cataloging system.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
             link: "https://aax-book-catalog-app.netlify.app/"
         },
         {
             title: "Memory Game", 
-            desc: "A timed card-flipping game that tests the user's memory",
+            desc: "A timed card-flipping game that tests the user's memory.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Hard",
             link: "https://aax-memory-game.netlify.app/"
