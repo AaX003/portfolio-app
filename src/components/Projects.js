@@ -24,7 +24,7 @@ function Projects() {
             desc: "A to-do list with basic creation and deletion.",
             tags: ["ReactJS", "HTML", "CSS"],
             difficulty: "Easy",
-            link: "https://aax-rps-game.netlify.app/"
+            link: "https://aaxhil-task-app.netlify.app/"
         },
         {
             title: "Employee Authentication App", 
