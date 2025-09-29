@@ -1,0 +1,189 @@
+:root{
+  --accent: #22c55e;
+  --card: rgba(255,255,255,.06);
+  --border: rgba(255,255,255,.12);
+  --text: #fff;
+  --muted: rgba(255,255,255,.8);
+  --section-gap: clamp(3rem, 8vw, 6rem);
+  --anchor-offset: 80vh; 
+}
+
+
+
+section{
+  margin-block: var(--section-gap);
+  scroll-margin-top: var(--anchor-offset);
+}
+
+
+.header__hero__contact {
+    text-align: center;
+    border-radius: 16px;
+    padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+
+.contact-section{
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+  background: rgba(99, 99, 99, 0.147);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  color: var(--text);
+}
+
+
+.contact-title{
+  margin: 0 0 .75rem;
+  font-size: clamp(1.1rem, 1rem + .8vw, 1.5rem);
+  font-weight: 700;
+}
+
+
+.contact-msg,
+.my-email-label,
+.my-tel-label,
+.my-github-label,
+.my-linkedin-label {
+    color: rgba(255, 255, 255, 0.388);
+    font-size: .75rem;
+}
+
+
+.phone a,
+.email a,
+.github a,
+.linkedin a {
+    font-size: .85rem;
+    transition: color 0.3s;
+}
+
+
+.phone a:hover,
+.email a:hover,
+.github a:hover,
+.linkedin a:hover {
+    color: rgb(11, 177, 88); 
+}
+
+
+.contact-svg {
+    display: inline-flex;
+    margin-right: 2%;
+    margin-top: 4%;
+    border: 1px solid rgba(6, 142, 113, 0.377);
+    border-radius: 10px;
+    color: rgb(11, 177, 88); 
+    background: rgba(6, 142, 113, 0.225);
+    padding: .55rem;
+}
+
+
+.contact-svg svg {
+    gap: 2rem;
+}
+
+
+.contact-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+
+.email-label{
+  display: grid;
+  gap: .5rem;
+}
+
+
+
+.contact-section input,
+.contact-section textarea{
+  width: 100%;
+  color: var(--text);
+  background: #898b8a40;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .7rem .9rem;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+
+textarea {
+  resize: none;
+}
+
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder{
+  color: var(--muted);
+  opacity: .7;
+}
+
+
+.contact-section input:focus-visible,
+.contact-section textarea:focus-visible{
+  border-color: color-mix(in oklab, var(--accent), white 20%);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent), transparent 70%);
+}
+
+
+.contact-section button{
+  justify-self: start;
+  background: rgba(6, 180, 116, 0.435);
+  color: rgba(4, 250, 160, 0.435);
+  font-weight: 700;
+  border: 2px solid rgba(6, 180, 116, 0.435);
+  border-radius: 10px;
+  padding: .7rem 1.1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+
+.contact-section button:hover{
+  transform: translateY(1px);
+  box-shadow: 0 8px 24px #0006;
+}
+
+
+
+.header__hero + .contact-section{ 
+    margin-top: calc(var(--section-gap) - 1rem); 
+}
+
+
+.footer {
+    text-align: center;
+    color: rgba(255,255,255,.12);
+}
+
+
+/* MOBILITY */
+@media (max-width: 480px) {
+  .contact-section {
+    width: 110%;
+    place-self: center;
+  }
+
+  .phone a,
+  .email a,
+  .github a,
+  .linkedin a {
+    font-size: .65rem;
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+     border-radius: 8px;
+    padding: .55rem .7rem;        
+    font-size: .95rem;
+  }
+}
+

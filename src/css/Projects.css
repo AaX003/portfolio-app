@@ -1,0 +1,168 @@
+.header__hero__projects {
+    text-align: center;
+    border-radius: 16px;
+    padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+
+.projects-section .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 2rem;
+}
+
+
+.project-card {
+    background: rgba(99, 99, 99, 0.147);
+    padding: .55rem;
+    border-radius: 10px;
+    backdrop-filter: blur(-9px);
+    transition: color 0.5s;
+    border: 1px solid rgba(128, 128, 128, 0.399);
+}
+
+
+.project-card:hover {
+    color: rgb(10, 208, 165);
+}
+
+
+.project-title {
+    font-size: 1.2rem;
+}
+
+
+.project-title,
+.project-desc,
+.project-tags,
+.easy-project-difficulty {
+    margin: 2%;
+}
+
+
+.project-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    pointer-events: none;
+}
+
+
+.project-btn > * {
+    pointer-events: auto;
+    transition: color .3s;  
+}
+
+
+.project-btn:hover {
+    color: rgb(10, 208, 165);
+}
+
+
+
+.project-desc {
+    color: rgba(255, 255, 255, 0.388);
+}
+
+
+.project-desc,
+.tag,
+.easy-project-difficulty,
+.mid-project-difficulty,
+.hard-project-difficulty {
+    font-size: .75rem;
+}
+
+
+.project-tags {
+    display: flex;
+    gap: .9rem;
+}
+
+
+.tag {
+    padding:.25rem .6rem;
+    color: rgb(10, 208, 165);
+    background:rgba(6, 142, 113, 0.322);
+    border: 1px solid rgb(6, 142, 113);
+    border-radius: 20px;
+}
+
+
+.project-difficulty{
+  display: flex;
+  place-self: end;
+  width: 100%;
+  max-width: 64px;
+  padding:.25rem .6rem;
+  border-radius:999px;
+  font-weight:700;
+  font-size:.85rem;
+}
+
+
+.project-difficulty[data-level="Easy"]{
+  background: rgba(16,185,129,.18);
+  color:#10b981;
+  border:1px solid rgba(16,185,129,.35);
+}
+
+
+.project-difficulty[data-level="Med"]{
+  background: rgba(245,158,11,.18);
+  color:#f59e0b;
+  border:1px solid rgba(245,158,11,.35);
+}
+
+
+.project-difficulty[data-level="Hard"]{
+  background: rgba(239,68,68,.18);
+  color:#ef4444;
+  border:1px solid rgba(239,68,68,.35);
+}
+
+
+/* MOBILITY */
+@media (max-width: 480px) {
+    .projects-section .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+        gap: 2rem;
+    }
+
+    .project-title {
+        font-size: .85rem;
+    }
+
+    .project-desc {
+        padding-bottom: 4%;
+    }
+
+    .tag,
+    .project-difficulty,
+    .project-desc {
+        font-size: .65rem;
+    }
+
+    .project-title,
+    .project-desc {
+        text-align: center;
+    }
+
+    .project-difficulty {
+        max-width: 54px;
+    }
+}
+
+
+@media (min-width: 800px) and (max-width: 1268px) {
+    .projects-section .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        gap: 2rem;
+    }
+
+    .tag {
+        font-size: .55rem;
+    }
+}

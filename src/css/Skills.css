@@ -1,0 +1,132 @@
+:root{
+  --accent: #22c55e9b;   /* green */
+  --accent-2: #0e7534a9; /* darker green */
+  --card: rgba(255,255,255,.06);
+  --border: rgba(255,255,255,.12);
+  --text: #fff;
+  --muted: rgba(255,255,255,.8);
+}
+
+
+.main-container,
+.hero-container,
+.skills-container, 
+.about-container,
+.contact-container,
+.projects-container {
+  width: min(100% - 2rem, 960px);
+  margin: 2rem auto;
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+}
+
+
+
+.header__hero__skills {
+    text-align: center;
+    border-radius: 16px;
+    padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+
+.title-header{
+  margin: 0 0 .25rem;
+  font-size: clamp(1.4rem, 1rem + 2vw, 2rem);
+}
+
+
+.green-text{ color: var(--accent); }
+.desc-header{
+  margin: .25rem auto 0;
+  max-width: 62ch;
+  color: var(--muted);
+}
+
+
+
+.skills-section{ 
+    margin-top: 1.5rem; 
+}
+
+
+
+.skills-title {
+  color: rgb(5, 220, 124);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem 1rem;
+  background: rgba(99, 99, 99, 0.147);
+  padding: 1.6rem;
+  padding-bottom: 2.7rem;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.399);
+  backdrop-filter: blur(10px);
+}
+
+
+
+/* labels */
+.low-opacity-text{
+  margin: 1rem 0 .25rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+
+/* progress bars */
+progress{
+    width: 100%;
+    height: 12px;
+    appearance: none;
+    -webkit-appearance: none; /* removes appearance */
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 1px var(--border);
+}
+
+
+/* WebKit */
+progress::-webkit-progress-bar{
+  background: rgba(255,255,255,.12);
+  border-radius: 999px;
+}
+
+
+
+progress::-webkit-progress-value{
+  background: rgb(5, 220, 124);
+  border-radius: 999px;
+}
+
+
+
+/* Firefox Compatibility */
+progress::-moz-progress-bar{
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 999px;
+}
+
+
+progress:focus-visible{
+  outline: 2px solid color-mix(in oklab, var(--accent), white 25%);
+  outline-offset: 2px;
+}
+
+
+
+/* MOBILITY */
+@media (min-width: 800px) and (max-width: 1268px) {
+    .skills-categories {
+      display: grid;
+      place-self: center;
+      width: 60%;
+  }
+}

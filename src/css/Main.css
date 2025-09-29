@@ -1,0 +1,96 @@
+
+:root{
+  --bg1:#000000;
+  --bg2:#1d754d;
+  --card:#1a1a1acc;
+  --text:#ffffff;
+  --muted:#b8c3bd;
+  --accent:#4ade80;
+  --bg: radial-gradient(at center, #023824, #01130c, #000905);
+}
+
+
+body {
+  color:var(--text);
+  line-height:1.5;
+  min-height:100dvh; 
+  background: radial-gradient(at center, #01130c, #00130f);
+}
+
+
+.bg {
+  background: var(--bg);
+  animation: pulse 0.9s ease-in-out infinite;
+  position: fixed; inset: 0;
+  z-index: -999; 
+  pointer-events: none;
+}
+
+
+.portfolio-header {
+    background: rgba(99, 99, 99, 0.147);
+    width:min(100% - 2rem, 960px);
+    margin:1rem auto;
+    border-radius:12px;
+    padding:clamp(.75rem, 2.5vw, 1rem);
+    font-size:clamp(.95rem, .9rem + .25vw, 1.05rem);
+    line-height:1.45;
+    white-space:pre-line; 
+}
+
+
+.hamburger-menu-btn {
+    place-self: end;
+    padding: .55rem;
+    border-radius: 999px;
+    transition: all 0.2s;
+}
+
+
+.hamburger-menu-btn:hover {
+  background: rgba(148, 148, 148, 0.147);
+  border-radius: 999px;
+}
+
+
+#nav-links {
+    display: none;
+}
+
+
+#nav-links a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin: 3%;
+    transition: color 0.4s;
+}
+
+
+#nav-links a:hover {
+   color: var(--accent);
+}
+
+
+.nav-links a:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+
+
+@media (max-width:600px){
+  .portfolio-header{ 
+    width:min(100% - 1rem, 720px); 
+  }
+}
+
+
+
+@media (min-width: 800px) and (max-width: 1268px) {
+    .portfolio-header {
+      width:min(100% - 1rem, 620px); 
+    }
+}
