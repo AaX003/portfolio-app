@@ -30,7 +30,6 @@ function Main() {
         return () => document.removeEventListener("click", handleClickOutside);
     }, []);
 
-
     const toggleMenu = () => {
         const links = document.getElementById("nav-links");
 
@@ -39,8 +38,11 @@ function Main() {
         
     };
 
+   
   return (
+    
     <div className="main-container">
+      
       <div className="bg"></div>
       <div className="header-container">
         <header className="portfolio-header">
@@ -56,18 +58,17 @@ function Main() {
               <FaBars />
           </button>
           <div id="nav-links" style={{ display: "none" }}>
-            <a href="/about">About</a>
-            <a href="/skills">Skills</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </div>
         </header>
         <main id="components">
-          <section id="#hero"><Hero /></section>
-          <section id="#about"><About /></section>
-          <section id="#skills"><Skills /></section>
-          <section id="#projects"><Projects /></section>
-          <section id="#contact"><Contact /></section>
+          <section id="hero"><Hero /></section>
+          <section id="about"><About /></section>
+          <section id="skills"><Skills /></section>
+          <section id="projects"><Projects /></section>
+          <section id="contact"><Contact /></section>
         </main>
       </div>
     </div>

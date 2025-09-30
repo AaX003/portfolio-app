@@ -1,7 +1,5 @@
 import "../css/Hero.css";
 
-import { Link } from "react-router-dom";
-
 function Hero() {
     return (
         <div className="hero-container">
@@ -19,7 +17,7 @@ function Hero() {
                 </p>
             </header>
             <div className="nav-btns-container">
-                <Link to="/projects" className="projects-btn">View My Works</Link>
+                <a href="/projects" className="projects-btn">View My Works</a>
             </div>
         </div>
     )

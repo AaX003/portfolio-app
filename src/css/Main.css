@@ -1,3 +1,23 @@
+:root, 
+html, 
+body { 
+  scroll-behavior: smooth;
+  scroll-padding-top: 126px;  
+}
+
+
+#hero, 
+#about, 
+#skills, 
+#projects, 
+#contact {
+  scroll-margin-top: 126px;
+}
+
+
+:target { 
+  outline: 2px dashed rgba(0, 255, 0, 0.163); 
+}
 
 :root{
   --bg1:#000000;
