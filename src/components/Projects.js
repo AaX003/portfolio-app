@@ -13,11 +13,11 @@ function Projects() {
             link: "https://aax-calculator.netlify.app/"
         },
         {
-            title: "RPS", 
-            desc: "A simple rps game with random module.",
+            title: "Number Guess Game", 
+            desc: "A simple number guess app with random module.",
             tags: ["ReactJS", "HTML", "CSS"],
-            difficulty: "Easy",
-            link: "https://aax-rps-game.netlify.app/"
+            difficulty: "Med",
+            link: "https://aaxhil-num-guess-app.netlify.app/"
         },
         {
             title: "Task App", 
