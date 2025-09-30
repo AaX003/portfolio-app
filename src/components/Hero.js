@@ -16,9 +16,6 @@ function Hero() {
                     solving complex problems through clean, efficient code.
                 </p>
             </header>
-            <div className="nav-btns-container">
-                <a href="/projects" className="projects-btn">View My Works</a>
-            </div>
         </div>
     )
 }
