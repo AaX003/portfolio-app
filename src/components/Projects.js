@@ -69,13 +69,6 @@ function Projects() {
             link: "https://aax-password-validator.netlify.app/"
         },
         {
-            title: "Book Catalog App", 
-            desc: "A basic book cataloging system.",
-            tags: ["ReactJS", "HTML", "CSS"],
-            difficulty: "Easy",
-            link: "https://aax-book-catalog-app.netlify.app/"
-        },
-        {
             title: "Memory Game", 
             desc: "A timed card-flipping game that tests the user's memory.",
             tags: ["ReactJS", "HTML", "CSS"],
